@@ -62,24 +62,21 @@ class _EmployeeFormScreenState extends State<EmployeeFormScreen> {
                 TextFormField(
                   controller: _nameController,
                   decoration: const InputDecoration(labelText: 'Name'),
-                  validator: (value) =>
-                  value == null || value.isEmpty ? 'Please enter name' : null,
+                  validator: (value) => value == null || value.isEmpty ? 'Please enter name' : null,
                 ),
                 const SizedBox(height: 15),
                 TextFormField(
                   controller: _ageController,
                   decoration: const InputDecoration(labelText: 'Age'),
                   keyboardType: TextInputType.number,
-                  validator: (value) =>
-                  value == null || value.isEmpty ? 'Please enter age' : null,
+                  validator: (value) => value == null || value.isEmpty ? 'Please enter age' : null,
                 ),
                 const SizedBox(height: 15),
                 TextFormField(
                   controller: _salaryController,
                   decoration: const InputDecoration(labelText: 'Salary'),
                   keyboardType: TextInputType.number,
-                  validator: (value) =>
-                  value == null || value.isEmpty ? 'Please enter salary' : null,
+                  validator: (value) => value == null || value.isEmpty ? 'Please enter salary' : null,
                 ),
                 const SizedBox(height: 25),
                 Center(
