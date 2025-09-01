@@ -2,13 +2,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(EmployeeApp());
+  runApp(const EmployeeApp());
 }
 
 class EmployeeApp extends StatelessWidget {
+  const EmployeeApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Employee Form',
       debugShowCheckedModeBanner: false,
       home: EmployeeFormScreen(),
@@ -17,6 +19,8 @@ class EmployeeApp extends StatelessWidget {
 }
 
 class EmployeeFormScreen extends StatefulWidget {
+  const EmployeeFormScreen({super.key});
+
   @override
   _EmployeeFormScreenState createState() => _EmployeeFormScreenState();
 }
